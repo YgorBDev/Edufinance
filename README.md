@@ -13,7 +13,7 @@ EduFinance é uma plataforma inovadora de educação financeira projetada para t
 
 ## ✨ Funcionalidades Principais
 
-- **🧩 Trilhas de Conhecimento**: Aulas curtas e interativas estilo "Duolingo", organizadas por níveis de dificuldade.
+- **🧩 Trilhas de Conhecimento**: Aulas curtas e interativas estilo "roadmap", organizadas por níveis de dificuldade.
 - **📊 Simulador de Investimentos**: Ferramenta poderosa para projetar rendimentos reais baseados em aportes mensais, taxas de retorno e tempo.
 - **🤖 Professor FinBot**: Assistente de IA integrado para tirar dúvidas sobre o mercado financeiro em tempo real.
 - **📈 Dashboard Interativo**: Visualize a evolução do seu patrimônio, conquistas e progresso nas trilhas.
