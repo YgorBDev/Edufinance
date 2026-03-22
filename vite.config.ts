@@ -15,11 +15,11 @@ export default defineConfig(({ mode }) => ({
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
-      "@/pages": path.resolve(__dirname, "./src/páginas"),
+      "@/pages": path.resolve(__dirname, "./src/pages"),
       "@/components": path.resolve(__dirname, "./src/Componentes"),
-      "@/hooks": path.resolve(__dirname, "./src/ganchos"),
-      "@/lib": path.resolve(__dirname, "./src/Lib"),
-      "@/integrations/supabase": path.resolve(__dirname, "./src/Integrações_Supabase"),
+      "@/hooks": path.resolve(__dirname, "./src/hooks"),
+      "@/lib": path.resolve(__dirname, "./src/lib"),
+      "@/integrations/supabase": path.resolve(__dirname, "./src/integrations/supabase"),
       "@": path.resolve(__dirname, "./src"),
     },
   },
