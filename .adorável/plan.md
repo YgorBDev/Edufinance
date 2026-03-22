@@ -3,7 +3,7 @@
 # 🎓 EduFinance — Plataforma de Educação Financeira e Simulação de Investimentos
 
 ## Visão Geral
-Uma plataforma web educacional que combina aprendizado gamificado (estilo Duolingo), simulação de investimentos e gráficos interativos, desenvolvida como TCC do IFSUL. Backend completo com Supabase (autenticação, banco de dados, persistência).
+Uma plataforma web educacional que combina aprendizado gamificado (estilo roadmap), simulação de investimentos e gráficos interativos, desenvolvida como TCC do IFSUL. Backend completo com Supabase (autenticação, banco de dados, persistência).
 
 ---
 
@@ -21,7 +21,7 @@ Uma plataforma web educacional que combina aprendizado gamificado (estilo Duolin
 - Badges conquistados em destaque
 
 ## 🎯 3. Módulo Educacional — Trilha de Aprendizado (Gamificado)
-- Trilha visual com cards em sequência (estilo Duolingo)
+- Trilha visual com cards em sequência (estilo roadmap)
 - Barra de progresso geral da trilha
 - Níveis desbloqueáveis (próxima aula só libera ao concluir a anterior)
 - **5 aulas iniciais do Módulo "Fundamentos":**
