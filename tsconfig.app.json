@@ -17,9 +17,12 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/pages/*": ["./src/pages/*"],
+      "@/components/*": ["./src/Componentes/*"],
+      "@/hooks/*": ["./src/hooks/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/integrations/supabase/*": ["./src/integrations/supabase/*"],
+      "@/*": ["./src/*"]
     },
     "skipLibCheck": true,
     "strict": false,

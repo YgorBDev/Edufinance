@@ -4,7 +4,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "./AppSidebar";
 import { ThemeToggle } from "./ThemeToggle";
 import { StreakDisplay } from "./StreakDisplay";
-import { OnboardingFlow } from "./Integração/OnboardingFlow";
+import { OnboardingFlow } from "./integration/OnboardingFlow";
 
 export function AppLayout() {
   const { user, loading } = useAuth();

@@ -5,9 +5,9 @@ import { useAuth } from "@/hooks/useAuth";
 import { useProfile } from "@/hooks/useProfile";
 import { useToast } from "@/hooks/use-toast";
 import { Progress } from "@/components/ui/progress";
-import ModuleSection from "@/components/trilha/ModuleSection";
-import LessonDetail from "@/components/trilha/LessonDetail";
-import QuizView from "@/components/trilha/QuizView";
+import ModuleSection from "@/components/trail/ModuleSection";
+import LessonDetail from "@/components/trail/LessonDetail";
+import QuizView from "@/components/trail/QuizView";
 import { Zap, Target, Trophy } from "lucide-react";
 
 export type Lesson = {

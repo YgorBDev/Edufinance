@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { EditProfileDialog } from "@/components/perfil/EditProfileDialog";
+import { EditProfileDialog } from "@/components/profile/EditProfileDialog";
 import {
   Trophy, Zap, Target, Flame, BookOpen, Star,
   TrendingUp, Award, Calendar, Shield, Sparkles, Crown, Pencil,
