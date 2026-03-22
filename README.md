@@ -90,4 +90,4 @@ Este projeto é de uso privado e educacional. Todos os direitos reservados.
 
 ---
 
-Desenhado com ❤️ por **YgorBDev** utilizando a tecnologia Lovable.
+Desenhado com ❤️ por **YgorBDev**.
