@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# 🎓 EduFinance - Educação Financeira Gamificada
 
-## Project info
+![Versão](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite)
+![Supabase](https://img.shields.io/badge/Supabase-DB-3ECF8E?logo=supabase)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css)
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+EduFinance é uma plataforma inovadora de educação financeira projetada para transformar o aprendizado complexo sobre investimentos em uma jornada intuitiva, divertida e eficaz. Inspirada em modelos de gamificação de sucesso, a plataforma combina teoria, prática simulada e suporte de Inteligência Artificial.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Funcionalidades Principais
 
-**Use Lovable**
+- **🧩 Trilhas de Conhecimento**: Aulas curtas e interativas estilo "Duolingo", organizadas por níveis de dificuldade.
+- **📊 Simulador de Investimentos**: Ferramenta poderosa para projetar rendimentos reais baseados em aportes mensais, taxas de retorno e tempo.
+- **🤖 Professor FinBot**: Assistente de IA integrado para tirar dúvidas sobre o mercado financeiro em tempo real.
+- **📈 Dashboard Interativo**: Visualize a evolução do seu patrimônio, conquistas e progresso nas trilhas.
+- **🏆 Sistema de Ranking e XP**: Compita com outros usuários e ganhe XP ao completar lições e desafios.
+- **🌓 Modo Escuro/Claro**: Interface moderna com suporte completo a temas dinâmicos.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tecnologias Utilizadas
 
-**Use your preferred IDE**
+- **Frontend**: [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Estilização**: [Tailwind CSS](https://tailwindcss.com/) + [Shadcn/UI](https://ui.shadcn.com/)
+- **Backend/Auth**: [Supabase](https://supabase.com/)
+- **Gerenciamento de Estado**: [TanStack Query (React Query)](https://tanstack.com/query/latest)
+- **Ícones**: [Lucide React](https://lucide.dev/)
+- **Navegação**: [React Router DOM](https://reactrouter.com/)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📁 Estrutura do Projeto
 
-Follow these steps:
+O projeto utiliza uma organização de diretórios em português para facilitar o desenvolvimento local:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```text
+src/
+├── Componentes/          # Componentes reutilizáveis de UI
+├── páginas/              # Páginas principais da aplicação
+├── ganchos/              # Custom Hooks (useAuth, usePortfolio, etc.)
+├── Integrações_Supabase/ # Configurações e tipos do cliente Supabase
+├── Lib/                 # Utilitários e configurações globais
+└── App.tsx              # Roteamento e provedores globais
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Como Executar o Projeto Localmente
 
-**Use GitHub Codespaces**
+### Pré-requisitos
+- [Node.js](https://nodejs.org/) (recomendado v18+)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Instalação
 
-## What technologies are used for this project?
+1. Clone o repositório:
+```bash
+git clone https://github.com/YgorBDev/Edufinance.git
+cd Edufinance
+```
 
-This project is built with:
+2. Instale as dependências:
+```bash
+npm install
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. Configure as variáveis de ambiente:
+Crie um arquivo `.env` na raiz do projeto com as credenciais do seu projeto Supabase:
+```env
+VITE_SUPABASE_URL=sua_url_aqui
+VITE_SUPABASE_ANON_KEY=sua_chave_aqui
+```
 
-## How can I deploy this project?
+4. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
+A aplicação estará disponível em `http://localhost:8080`.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 📄 Licença
 
-Yes, you can!
+Este projeto é de uso privado e educacional. Todos os direitos reservados.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Desenhado com ❤️ por **YgorBDev** utilizando a tecnologia Lovable.
