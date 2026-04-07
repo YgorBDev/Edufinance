@@ -95,6 +95,90 @@
             border-radius: 0.5rem;
             margin: 1rem 0;
         }
+
+        .slide-panel {
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(148, 163, 184, 0.15);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.35);
+        }
+
+        .slide-items {
+            margin-top: 1rem;
+            display: grid;
+            gap: 1rem;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .slide-items li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: #cbd5e1;
+            font-size: 1rem;
+        }
+
+        .slide-items li i {
+            min-width: 2.5rem;
+            min-height: 2.5rem;
+            display: grid;
+            place-items: center;
+            background: rgba(59, 130, 246, 0.15);
+            border-radius: 0.75rem;
+            color: #60a5fa;
+            margin-top: 0.2rem;
+        }
+
+        .image-card {
+            overflow: hidden;
+            border-radius: 1rem;
+            border: 1px solid rgba(148, 163, 184, 0.15);
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
+            padding: 1rem;
+        }
+
+        .image-card img {
+            border-radius: 0.75rem;
+        }
+
+        .image-overlay {
+            position: fixed;
+            inset: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.92);
+            z-index: 300;
+            padding: 2rem;
+        }
+
+        .image-overlay.active {
+            display: flex;
+        }
+
+        .image-overlay img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 0 80px rgba(0, 0, 0, 0.7);
+        }
+
+        .image-overlay .close-btn {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 9999px;
+            background: rgba(15, 23, 42, 0.85);
+            border: 1px solid rgba(226, 232, 240, 0.25);
+            display: grid;
+            place-items: center;
+            color: #e2e8f0;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -125,7 +209,7 @@
             <div class="bg-card p-8 rounded-xl">
                 <i class="fas fa-user-graduate text-yellow-500 text-4xl mb-4"></i>
                 <h3 class="text-xl font-bold mb-4">Falta de Preparo</h3>
-                <p class="text-gray-400">Jovens ingressam no mercado de trabalho sem literacia financeira básica.</p>
+                <p class="text-gray-400">Jovens ingressam no mercado de trabalho sem conhecimento financeiro básico.</p>
             </div>
             <div class="bg-card p-8 rounded-xl">
                 <i class="fas fa-exclamation-triangle text-orange-500 text-4xl mb-4"></i>
@@ -187,7 +271,7 @@
             <div class="bg-card p-6 rounded-lg text-center">
                 <i class="fas fa-database text-4xl mb-2 text-blue-400"></i>
                 <p class="font-bold">Banco de Dados</p>
-                <span class="text-sm text-gray-500">PostgreSQL</span>
+                <span class="text-sm text-gray-500">Supabase</span>
             </div>
             <div class="bg-card p-6 rounded-lg text-center">
                 <i class="fas fa-link text-4xl mb-2 text-green-400"></i>
@@ -231,12 +315,12 @@
         </div>
         <div class="grid grid-cols-2 gap-8 mt-8">
             <div class="space-y-2">
-                <p class="font-bold accent-blue"><i class="fas fa-trophy mr-2"></i>Gamificação</p>
-                <p class="text-sm text-gray-400">Níveis, XP e Badges motivam a progressão contínua do aluno.</p>
+                <p class="font-bold accent-blue"><i class="fas fa-trophy mr-2"></i>Azul-Destaque</p>
+                <p class="text-sm text-gray-400">Cor utilizada para destacar elementos importantes na interface.</p>
             </div>
             <div class="space-y-2">
-                <p class="font-bold accent-green"><i class="fas fa-chart-area mr-2"></i>Simulação em Tempo Real</p>
-                <p class="text-sm text-gray-400">Histórico de simulações (Renda Fixa) com cálculos automatizados.</p>
+                <p class="font-bold accent-green"><i class="fas fa-chart-area mr-2"></i>Verde - Contraste</p>
+                <p class="text-sm text-gray-400">Cor utilizada para criar contraste e destacar elementos importantes na interface.</p>
             </div>
         </div>
     </div>
@@ -251,21 +335,28 @@
                     <div class="w-10 h-10 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center font-bold">1</div>
                     <h5 class="font-bold">Requisitos</h5>
                     <p class="text-xs text-gray-500">Modelagem e Interface</p>
+                    <p class="text-xs text-gray-500">1° Etapa - Janeiro</p>
+
                 </div>
                 <div class="text-center">
                     <div class="w-10 h-10 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center font-bold">2</div>
                     <h5 class="font-bold">Desenvolvimento</h5>
                     <p class="text-xs text-gray-500">Back-end e APIs</p>
+                    <p class="text-xs text-gray-500">2° Etapa - Março</p>
+
                 </div>
                 <div class="text-center">
                     <div class="w-10 h-10 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center font-bold">3</div>
                     <h5 class="font-bold">Testes</h5>
                     <p class="text-xs text-gray-500">Performance e UX</p>
+                    <p class="text-xs text-gray-500">3° Etapa - Maio</p>
+
                 </div>
                 <div class="text-center">
                     <div class="w-10 h-10 bg-green-600 rounded-full mx-auto mb-4 flex items-center justify-center font-bold">4</div>
                     <h5 class="font-bold">Implantação</h5>
                     <p class="text-xs text-gray-500">Documentação e Lançamento</p>
+                    <p class="text-xs text-gray-500">4° Etapa - Agosto</p>
                 </div>
             </div>
         </div>
@@ -276,13 +367,13 @@
         <div class="slide" id="slide7">
             <h2 class="text-4xl font-bold mb-12 border-l-8 border-blue-500 pl-6">Segurança e Acesso</h2>
             <div class="grid-2">
-                <div class="image-container">
+                <div class="image-container image-card">
                     <img src="/apresentacao/imagem/login.png" alt="Ecrã de Login">
                 </div>
-                <div>
+                <div class="slide-panel">
                     <h3 class="text-2xl font-bold mb-5">Porta de Entrada</h3>
-                    <p class="mb-5">Uma interface limpa e segura para garantir que o progresso de cada aluno é individual e protegido.</p>
-                    <ul>
+                    <p class="mb-5 text-gray-300">Uma interface limpa e segura para garantir que o progresso de cada aluno é individual e protegido.</p>
+                    <ul class="slide-items">
                         <li><i class="fas fa-shield-alt"></i> Autenticação robusta para proteção de dados.</li>
                         <li><i class="fas fa-user-plus"></i> Processo de registo simples e intuitivo.</li>
                         <li><i class="fas fa-desktop"></i> Design responsivo para qualquer navegador.</li>
@@ -312,13 +403,13 @@
         <div class="slide" id="slide9">
             <h2 class="text-4xl font-bold mb-12 border-l-8 border-blue-500 pl-6">Conteúdo Programático</h2>
             <div class="grid-2">
-                <div class="image-container">
+                <div class="image-container image-card">
                     <img src="/apresentacao/imagem/trilha.png" alt="Módulos de Estudo">
                 </div>
-                <div>
+                <div class="slide-panel">
                     <h3 class="text-2xl font-bold mb-5">Trilha de Aprendizado</h3>
-                    <p class="mb-5">Aulas organizadas por módulos que vão desde os conceitos básicos de poupança até estratégias complexas de investimento.</p>
-                    <ul>
+                    <p class="mb-5 text-gray-300">Aulas organizadas por módulos que vão desde os conceitos básicos de poupança até estratégias complexas de investimento.</p>
+                    <ul class="slide-items">
                         <li><i class="fas fa-layer-group"></i> Progressão lógica de conteúdos.</li>
                         <li><i class="fas fa-award"></i> Desbloqueio de badges ao finalizar módulos.</li>
                         <li><i class="fas fa-check-circle"></i> Marcação visual de aulas concluídas.</li>
@@ -348,13 +439,13 @@
         <div class="slide" id="slide11">
             <h2 class="text-4xl font-bold mb-12 border-l-8 border-blue-500 pl-6">Social e Identidade</h2>
             <div class="grid-2">
-                <div class="image-container">
+                <div class="image-container image-card">
                     <img src="/apresentacao/imagem/perfil.png" alt="Perfil do Utilizador">
                 </div>
-                <div>
+                <div class="slide-panel">
                     <h3 class="text-2xl font-bold mb-5">Ranking e Conquistas</h3>
-                    <p class="mb-5">A competição saudável incentiva a continuidade dos estudos e a melhoria das estratégias financeiras.</p>
-                    <ul>
+                    <p class="mb-5 text-gray-300">A competição saudável incentiva a continuidade dos estudos e a melhoria das estratégias financeiras.</p>
+                    <ul class="slide-items">
                         <li><i class="fas fa-trophy"></i> Ranking global de alunos com mais XP.</li>
                         <li><i class="fas fa-id-card"></i> Perfil personalizável com histórico de sucesso.</li>
                         <li><i class="fas fa-star"></i> Sistema de badges para reconhecimento de mérito.</li>
@@ -377,7 +468,7 @@
             <div class="grid grid-cols-2 gap-4 pt-8">
                 <div class="text-left p-4 bg-gray-900/50 rounded">
                     <p class="font-bold text-white mb-1">Métricas de Sucesso</p>
-                    <p class="text-sm text-gray-500">Alta satisfação e compreensão prática de juros e capital.</p>
+                    <p class="text-sm text-gray-500">Alta satisfação e compreensão sobre educação financeira.</p>
                 </div>
                 <div class="text-left p-4 bg-gray-900/50 rounded">
                     <p class="font-bold text-white mb-1">Inclusão Financeira</p>
@@ -403,13 +494,31 @@
         </div>
     </div>
 
+    <!-- Slide 14: Logo do EduFinance -->
+    <div class="slide active" id="slide14">
+        <div class="text-center">
+            <h1 class="text-6xl font-black mb-4"><span class="accent-blue">Edu</span><span class="accent-green">Finance</span></h1>
+            <h2 class="text-2xl mb-8 text-gray-400">Plataforma Gamificada para Educação Financeira</h2>
+            <div class="h-1 w-32 bg-blue-500 mx-auto mb-12"></div>
+            <p class="text-xl mb-2">Mohamad Assaf & Ygor Bitencourt</p>
+            <p class="text-gray-500 italic">Orientação: Matheus Raeder | Coorientação: Roberto Bokowski</p>
+            <p class="mt-12 text-sm text-gray-600">17 de Março de 2026</p>
+        </div>
+    </div>
+
+    
+    <div class="image-overlay" id="imageOverlay">
+        <div class="close-btn" id="overlayClose"><i class="fas fa-times"></i></div>
+        <img id="overlayImage" src="" alt="Imagem ampliada">
+    </div>
+
     <!-- Navegação -->
     <div class="nav-btn" id="prevBtn" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></div>
     <div class="nav-btn" id="nextBtn" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></div>
 
     <script>
         let currentSlide = 1;
-        const totalSlides = 13;
+        const totalSlides = 14;
 
         function changeSlide(direction) {
             const next = currentSlide + direction;
@@ -429,6 +538,29 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight' || e.key === ' ') changeSlide(1);
             if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'Escape') closeImageOverlay();
+        });
+
+        const imageOverlay = document.getElementById('imageOverlay');
+        const overlayImage = document.getElementById('overlayImage');
+        const overlayClose = document.getElementById('overlayClose');
+
+        document.querySelectorAll('.image-container img').forEach((img) => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', () => {
+                overlayImage.src = img.src;
+                imageOverlay.classList.add('active');
+            });
+        });
+
+        const closeImageOverlay = () => {
+            imageOverlay.classList.remove('active');
+            overlayImage.src = '';
+        };
+
+        overlayClose.addEventListener('click', closeImageOverlay);
+        imageOverlay.addEventListener('click', (event) => {
+            if (event.target === imageOverlay) closeImageOverlay();
         });
 
         window.onload = () => {
